@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zahid Malik | Portfolio</title>
+<meta name="description" content="Zahid Malik - Web Developer, UI/UX Designer & Graphic Designer Portfolio">
+<meta name="keywords" content="Zahid Malik, Web Developer, UI UX, Portfolio, Pakistan Developer">
+<meta name="author" content="Zahid Malik">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Zahid Malik Portfolio">
+<meta property="og:description" content="Web Developer Portfolio">
+<meta property="og:image" content="images/profile.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="images/profile.jpg">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Orbitron:wght@600;800&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</head>
+<body>
+
+<!-- SPLASH SCREEN -->
+<div id="splash-screen">
+  <div id="loader">Loading...</div>
+  <h1 class="welcome-text">Welcome To <br>My Portfolio</h1>
+  <p class="click-text">Click Anywhere To Enter</p>
+</div>
+
+<!-- PARTICLES -->
+<div id="particles-js"></div>
+<div id="progressBar"></div>
+
+<!-- NAVBAR -->
+<div class="menu-toggle"><i class="fas fa-bars"></i></div>
+<nav>
+  <div class="logo">Zahid Malik</div>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-img">
+    <img src="images/profile.jpg" alt="Zahid Malik Web Developer Portfolio">
+  </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section id="home" class="hero">
+  <div class="hero-left">
+    <h1 class="hero-title">This is Zahid Malik</h1>
+    <h3 class="typing"></h3>
+    <p class="animate-para">
+      I create modern, animated and premium websites with a focus on responsive design and innovative digital experiences.
+    </p>
+    <div class="buttons">
+      <button class="btn" id="hireBtn">Hire Me</button>
+      <a href="#contact" class="btn-outline">Let's Talk</a>
+      <a href="cv.pdf" download class="btn">Download CV</a>
+    </div>
+    <div class="socials">
+      <a href="https://github.com/zahidmalik" target="_blank" title="View my GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/zahidmalik" target="_blank" title="Connect on LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.facebook.com/zahidmalik.awan.735" target="_blank" title="Visit my Facebook"><i class="fab fa-facebook"></i></a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="glow-circle"><img src="images/profile.jpg" alt="Zahid Malik"></div>
+  </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about">
+  <h2 class="animate">About Me</h2>
+  <p class="animate-para">
+I am a Computer Science student and passionate Web Developer from Pakistan. I specialize in creating responsive and modern websites using HTML, CSS and JavaScript. I also work in Game Development using Python and Unity, and have experience in Graphic Design including branding, UI layouts and creative visuals. My focus is on building fast, user-friendly and visually appealing digital experiences across web, games and digital media.
+</p>
+<h3 class="about-role">• Web Developer  • Game Developer  • Graphic Designer</h3>
+</section>
+
+<!-- SKILLS SECTION -->
+<section id="skills">
+  <h2 class="animate">My Skills</h2>
+  <div class="skills-container">
+    <div class="skill-card">
+      <h3>Game Development</h3>
+      <p>Pygame, Python, Unity, C#</p>
+      <div class="skill-info"><p>Game development involves designing, coding, and testing interactive games. Pygame and Python are great for prototyping simple games. Unity is used for professional 2D and 3D games. C# is the primary scripting language in Unity. Good understanding of algorithms, graphics, and physics makes the gameplay smooth and engaging. Creativity is key to build fun experiences for players.</p></div>
+    </div>
+    <div class="skill-card">
+      <h3>Web Development</h3>
+      <p>HTML, CSS, JavaScript, Responsive Design</p>
+      <div class="skill-info"><p>Web development includes building websites and web applications. HTML structures content, CSS styles it, and JavaScript adds interactivity. Responsive design ensures websites work on all devices. Developers also focus on performance, accessibility, and SEO. Frameworks like React or Vue help in creating dynamic apps. Understanding both front-end and back-end concepts is crucial.</p></div>
+    </div>
+    <div class="skill-card">
+      <h3>E-Commerce Development</h3>
+      <p>Online Stores, Payment Integration</p>
+      <div class="skill-info"><p>E-commerce development is creating online stores with smooth shopping experiences. It includes product catalog, shopping cart, and checkout systems. Secure payment integration is crucial for trust. Developers also focus on performance, mobile-friendliness, and user experience. Tools like Shopify or WooCommerce simplify development. Marketing and analytics can help boost sales.</p></div>
+    </div>
+    <div class="skill-card">
+      <h3>School Websites</h3>
+      <p>Admin panels, Dynamic UI</p>
+      <div class="skill-info"><p>School website development involves building platforms for students, teachers, and admins. Features include attendance, grading, and notifications. Dynamic UI improves usability and interaction. Security and data privacy are important. Responsive design ensures access from all devices. Automation helps reduce administrative workload. A well-structured back-end manages all student data efficiently.</p></div>
+    </div>
+    <div class="skill-card">
+      <h3>UI / UX & Graphic Design</h3>
+      <p>Wireframes, Prototyping, Branding</p>
+      <div class="skill-info"><p>UI/UX design focuses on creating user-friendly digital products. Wireframes help in planning layout and structure. Prototyping allows testing of user flows before final design. Branding ensures consistency across visuals and messaging. Understanding user psychology improves engagement. Tools like Figma, Adobe XD, or Illustrator help create stunning visuals. Good design enhances both aesthetics and functionality.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE SECTION -->
+<section id="experience">
+  <h2 class="animate">Education & Experience</h2>
+  <div class="skills-container">
+    <div class="skill-card">
+      <h3>Education</h3>
+      <p>BS Computer Science From <br> Abbottabad University of Science and Technology</p>
+    </div>
+    <div class="skill-card">
+      <h3>Experience</h3>
+      <p>Freelance Web Developer - Building responsive websites and graphic designs.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS SECTION -->
+<section id="projects">
+  <h2 class="animate">Projects</h2>
+  <div class="projects">
+    <div class="card">
+      <h3><a href="https://www.exportleftovers.com/" target="_blank">E-Commerce Website</a></h3>
+      <p>Online store <span class="tech">HTML | CSS | JS | Stripe API</span></p>
+    </div>
+    <div class="card">
+      <h3><a href="https://www.ssmsc.edu.pk/" target="_blank">School Management Site</a></h3>
+      <p>Admin dashboard + database</p>
+    </div>
+    <div class="card">
+      <h3><a href="https://dribbble.com/" target="_blank">Portfolio UI Design</a></h3>
+      <p>Modern & interactive interface</p>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY SECTION -->
+<section id="gallery">
+  <h2 class="animate">Graphic Design Work</h2>
+  <div class="gallery-container">
+    <div class="gallery-item"><img src="images/portfolio design.jpg" alt="Portfolio Design" loading="lazy"></div>
+    <div class="gallery-item"><img src="images/folio design.jpg" alt="Folio Design" loading="lazy"></div>
+    <div class="gallery-item"><img src="images/floor design.jpg" alt="Floor Design" loading="lazy"></div>
+    <div class="gallery-item"><img src="images/visiting card.jpg" alt="Visiting Card" loading="lazy"></div>
+    <div class="gallery-item"><img src="images/MALIK.jpg" alt="MALIK" loading="lazy"></div>
+    <div class="gallery-item"><img src="images/bridel graphic design.jpg" alt="Bridal Graphic Design" loading="lazy"></div>
+    <div class="gallery-item"><img src="images/gps baghdara.png" alt="GPS Baghdara" loading="lazy"></div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="contact-section">
+  <h2 class="animate">Contact Me</h2>
+  <div class="contact-container">
+    <div class="contact-card">
+      <i class="fas fa-envelope"></i>
+      <h3>Email</h3>
+      <p><a href="mailto:malikzahidmalik860@gmail.com">malikzahidmalik860@gmail.com</a></p>
+    </div>
+    <div class="contact-card">
+      <i class="fas fa-phone"></i>
+      <h3>Phone</h3>
+      <p><a href="tel:03123939650">0312-3939650</a></p>
+    </div>
+  </div>
+  <div class="form-wrapper">
+    <form id="contact-form">
+  <input type="text" name="user_name" placeholder="Your Name" required>
+  <input type="email" name="user_email" placeholder="Your Email" required>
+  <textarea name="message" placeholder="Your Message" required></textarea>
+  <button type="submit" class="btn">Send Message</button>
+</form>
+  </div>
+</section>
+
+<button id="topBtn">↑</button>
+
+<!-- HIRE POPUP -->
+<div id="hirePopup" class="popup">
+  <div class="popup-box">
+    <span class="closePopup">&times;</span>
+    <h2>Start Your Project</h2>
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Your Email">
+    <textarea placeholder="Project Details"></textarea>
+    <button class="btn">Send Request</button>
+  </div>
+</div>
+
+<footer>
+  <p style="text-align:center; padding:30px 10%; color:#00f7ff; border-top:1px solid rgba(0,247,255,0.2);">
+    © 2026 Developed by ZAHID. All Rights Reserved.
+  </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
