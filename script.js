@@ -215,14 +215,14 @@ heroTitle.appendChild(span);
 
 // EMAILJS INIT
 (function(){
-  emailjs.init("YOUR_PUBLIC_KEY"); // yahan apni key
+  emailjs.init("UV7MwNNk1n_96h1Nr"); // yahan apni key
 })();
 
 // FORM SUBMIT
 document.getElementById("contact-form").addEventListener("submit", function(e){
   e.preventDefault();
 
-  emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", this)
+  emailjs.sendForm("service_rffml1c", "template_r608d88", this)
     .then(function(){
       alert("Message sent successfully ✅");
     }, function(error){
