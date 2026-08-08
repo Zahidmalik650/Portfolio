@@ -141,10 +141,15 @@ html{scroll-behavior:smooth;}
   .contact-section .form-wrapper button{width:70%!important;}
   footer p{font-size:14px!important;padding:20px 5%!important;text-align:center!important;}
 }
-#scale-wrapper{
-  width:1440px;
-  transform-origin: top left;
-}
-body{
-  overflow-x:hidden;
+@media(max-width:768px){
+  body{padding-top:100px;}
+  .hero{flex-direction:column;height:auto;padding:40px 6%;text-align:center;}
+  .hero-left{max-width:100%;}
+  .hero-left h1{font-size:32px;}
+  .buttons{flex-wrap:wrap;justify-content:center;}
+  .glow-circle{width:220px;height:220px;margin-top:30px;}
+  .skills-container{margin:30px 6%;}
+  .projects{padding:0 6%;}
+  .contact-card{padding:30px 20px;min-width:200px;}
+  section h2{font-size:28px;}
 }
