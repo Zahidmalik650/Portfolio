@@ -141,10 +141,3 @@ html{scroll-behavior:smooth;}
   .contact-section .form-wrapper button{width:70%!important;}
   footer p{font-size:14px!important;padding:20px 5%!important;text-align:center!important;}
 }
-#scale-wrapper{
-  width:1440px;
-  transform-origin: top left;
-}
-body{
-  overflow-x:hidden;
-}
