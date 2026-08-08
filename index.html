@@ -2,15 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=1440">
-<script>
-(function(){
-  var designWidth = 1440;
-  var scale = window.innerWidth / designWidth;
-  var meta = document.querySelector('meta[name="viewport"]');
-  meta.setAttribute('content', 'width=' + designWidth + ', initial-scale=' + scale + ', maximum-scale=' + scale + ', user-scalable=no');
-})();
-</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Zahid Malik | Portfolio</title>
 <meta name="description" content="Zahid Malik - Web Developer, UI/UX Designer & Graphic Designer Portfolio">
 <meta name="keywords" content="Zahid Malik, Web Developer, UI UX, Portfolio, Pakistan Developer">
@@ -28,7 +20,7 @@
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 </head>
 <body>
-
+<div id="scale-wrapper">
 <!-- SPLASH SCREEN -->
 <div id="splash-screen">
   <div id="loader">Loading...</div>
@@ -215,7 +207,17 @@ I am a Computer Science student and passionate Web Developer from Pakistan. I sp
     © 2026 Developed by ZAHID. All Rights Reserved.
   </p>
 </footer>
-
+</div>
+<script>
+function scaleWrapper(){
+  var w = document.getElementById('scale-wrapper');
+  var scale = window.innerWidth / 1440;
+  w.style.transform = 'scale(' + scale + ')';
+  document.body.style.height = (w.getBoundingClientRect().height) + 'px';
+}
+window.addEventListener('load', scaleWrapper);
+window.addEventListener('resize', scaleWrapper);
+</script>
 <script src="script.js"></script>
 </body>
 </html>
