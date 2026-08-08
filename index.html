@@ -20,7 +20,7 @@
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 </head>
 <body>
-<div id="scale-wrapper">
+
 <!-- SPLASH SCREEN -->
 <div id="splash-screen">
   <div id="loader">Loading...</div>
@@ -207,17 +207,7 @@ I am a Computer Science student and passionate Web Developer from Pakistan. I sp
     © 2026 Developed by ZAHID. All Rights Reserved.
   </p>
 </footer>
-</div>
-<script>
-function scaleWrapper(){
-  var w = document.getElementById('scale-wrapper');
-  var scale = window.innerWidth / 1440;
-  w.style.transform = 'scale(' + scale + ')';
-  document.body.style.height = (w.getBoundingClientRect().height) + 'px';
-}
-window.addEventListener('load', scaleWrapper);
-window.addEventListener('resize', scaleWrapper);
-</script>
+
 <script src="script.js"></script>
 </body>
 </html>
